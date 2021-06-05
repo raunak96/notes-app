@@ -10,7 +10,7 @@ const NoteSchema = new mongoose.Schema({
 	description: {
 		type: String,
 		required: [true, "Please add description"],
-		maxlength: [255, "Description cannot exceed 255 characters"],
+		maxlength: [1000, "Description cannot exceed 1000 characters"],
 	},
 });
 
